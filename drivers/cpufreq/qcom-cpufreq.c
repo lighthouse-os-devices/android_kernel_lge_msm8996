@@ -364,11 +364,11 @@ static struct cpufreq_frequency_table *cpufreq_parse_dt(struct device *dev,
 
 			if (cpu < 2) {
 				if (ftbl[i - 1].frequency ==
-						UNDERCLOCKED_MAX_KHZ_PWRCL)
+						UNDERCLK_MAX_PWRCL_MSM8996)
 					break;
 			} else {
 				if (ftbl[i - 1].frequency ==
-						UNDERCLOCKED_MAX_KHZ_PERFCL)
+						UNDERCLK_MAX_PERFCL_MSM8996)
 					break;
 			}
 
